@@ -14,7 +14,12 @@ cloudorbit/
 ├── frontend/   React + TypeScript site (builds to static HTML/CSS/JS)
 └── backend/    Express + TypeScript API that saves leads into Amazon RDS
 ```
-
+**rm -rf node_modules
+sudo apt install npm
+npm install --legacy-peer-deps
+npm run build
+npm run dev -- --host 0.0.0.0
+**
 ## 1. Set up the Amazon RDS database
 
 1. In the AWS Console, create (or reuse) an **RDS PostgreSQL** instance.
